@@ -1,4 +1,4 @@
-package week1;
+package test.week1;
 
 
 import static org.junit.Assert.*;
@@ -11,7 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import week1.MaxPairwiseProduct;
+import src.week1.MaxPairwiseProduct;
 
 public class MaxPairwiseProductTest {
 

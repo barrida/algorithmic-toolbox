@@ -1,4 +1,4 @@
-package week1;
+package src.week1;
 
 import java.io.*;
 import java.util.*;
@@ -16,7 +16,7 @@ public class SortMaxPairwiseAlgorithm{
 		System.out.println(getMaxPairwiseProduct(numbers));
 	}
 
-	static BigInteger getMaxPairwiseProduct(int[] numbers) {
+	public static BigInteger getMaxPairwiseProduct(int[] numbers) {
 		Arrays.sort(numbers);
 		BigInteger a = BigInteger.valueOf(numbers[numbers.length-2]);
 		BigInteger b = BigInteger.valueOf(numbers[numbers.length-1]);

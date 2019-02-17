@@ -1,4 +1,4 @@
-package week1;
+package src.week1;
 
 import java.util.*;
 import java.io.*;
@@ -6,7 +6,7 @@ import java.math.*;
 
 public class MaxPairwiseProduct {
 
-	static BigInteger getMaxPairwiseProduct(int[] numbers) {
+	public static BigInteger getMaxPairwiseProduct(int[] numbers) {
 
 		// find first max value
 		int maxIndex1 = getFirstMaxValue(numbers);
@@ -35,7 +35,7 @@ public class MaxPairwiseProduct {
 	 * @param maxIndex1
 	 * @return
 	 */
-	static int getSecondMaxValue(int[] numbers, int maxIndex1) {
+	public static int getSecondMaxValue(int[] numbers, int maxIndex1) {
 		
 		BigInteger n = BigInteger.valueOf(numbers.length);
 		int maxIndex2 = -1;
@@ -52,7 +52,7 @@ public class MaxPairwiseProduct {
 	 * @param n
 	 * @return
 	 */
-	static int getFirstMaxValue(int[] numbers) {
+     public static int getFirstMaxValue(int[] numbers) {
 		BigInteger n = BigInteger.valueOf(numbers.length);
 		int maxIndex1 = -1;
 		for (BigInteger first = BigInteger.valueOf(0); first.compareTo(n) < 0; first = first.add(BigInteger.ONE)) {

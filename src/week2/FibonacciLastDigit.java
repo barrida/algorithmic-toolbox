@@ -1,4 +1,4 @@
-package week2;
+package src.week2;
 
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ public class FibonacciLastDigit {
 	 * @param n
 	 * @return fibonacci number
 	 */
-	static long fibList(int n) {
+	public static long fibList(int n) {
 		if (n == 0)
 			return 0;
 

@@ -1,4 +1,4 @@
-package week2;
+package test.week2;
 
 import static org.junit.Assert.*;
 
@@ -7,6 +7,8 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import src.week2.GreatestCommonDivisor;
 
 public class GreatestCommonDivisorTest {
 

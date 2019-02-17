@@ -1,4 +1,4 @@
-package week2;
+package src.week2;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class LCM {
 	 * @param b positive integer b
 	 * @return least common multiple
 	 */
-	static long lcmNaive(long a, long b) {
+	public static long lcmNaive(long a, long b) {
 		for (long l = 1; l <= (a * b); ++l)
 			if (l % a == 0 && l % b == 0)
 				return l;
@@ -26,7 +26,7 @@ public class LCM {
 		return a * b;
 	}
 	
-	static long lcmEuclidian(long a, long b){
+	public static long lcmEuclidian(long a, long b){
 		long gcd = GreatestCommonDivisor.EuclidGcd(a, b);
 		return (a*b) / gcd;
 	}

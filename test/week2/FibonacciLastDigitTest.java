@@ -1,8 +1,10 @@
-package week2;
+package test.week2;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import src.week2.FibonacciLastDigit;
 
 public class FibonacciLastDigitTest {
 

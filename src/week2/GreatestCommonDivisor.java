@@ -1,4 +1,4 @@
-package week2;
+package src.week2;
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class GreatestCommonDivisor {
 	 * @param a
 	 * @param b
 	 */
-	static long EuclidGcd(long a, long b) {
+	public static long EuclidGcd(long a, long b) {
 		if (b == 0)
 			return a;
 		return EuclidGcd(b, a % b);

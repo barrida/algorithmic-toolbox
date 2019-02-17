@@ -1,5 +1,5 @@
 
-package week1;
+package test.week1;
 import static org.junit.Assert.*;
 
 import java.math.BigInteger;
@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import week1.SortMaxPairwiseAlgorithm;
+import src.week1.SortMaxPairwiseAlgorithm;
 
 public class SortMaxPairwiseAlgorithmTest {
 

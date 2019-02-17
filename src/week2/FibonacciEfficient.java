@@ -1,4 +1,4 @@
-package week2;
+package src.week2;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class FibonacciEfficient {
 		System.out.println(fibList(n));
 	}
 
-	static long fibList(long n) {
+	public static long fibList(long n) {
 		if (n == 0)
 			return 0;
 

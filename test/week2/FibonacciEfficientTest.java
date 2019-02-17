@@ -1,10 +1,12 @@
-package week2;
+package test.week2;
 
 import static org.junit.Assert.*;
 
 import java.math.BigInteger;
 
 import org.junit.Test;
+
+import src.week2.FibonacciEfficient;
 
 public class FibonacciEfficientTest {
 
