@@ -18,18 +18,23 @@ public class LCM {
 	 * @param b positive integer b
 	 * @return least common multiple
 	 */
-	static long lcmNaive(int a, int b) {
-		for (long l = 1; l <= (long) a * b; ++l)
+	static long lcmNaive(long a, long b) {
+		for (long l = 1; l <= (a * b); ++l)
 			if (l % a == 0 && l % b == 0)
 				return l;
 
-		return (long) a * b;
+		return a * b;
+	}
+	
+	static long lcmEuclidian(long a, long b){
+		long gcd = GreatestCommonDivisor.EuclidGcd(a, b);
+		return (a*b) / gcd;
 	}
 
 	public static void main(String args[]) {
 		Scanner scanner = new Scanner(System.in);
-		int a = scanner.nextInt();
-		int b = scanner.nextInt();
+		long a = scanner.nextInt();
+		long b = scanner.nextInt();
 
 		System.out.println(lcmNaive(a, b));
 	}
