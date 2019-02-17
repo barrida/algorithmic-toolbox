@@ -8,7 +8,7 @@ The class covers basic algorithmic techniques and ideas for computational proble
 * Greedy algorithms
 * Dynamic programming
 
-# Skills learned
+# Knowledge & Skills Gained
 * Sorting and search data
 * Breaking a large problem into pieces and solve them recursively
 * Packing your knapsack using greedy algorithms
