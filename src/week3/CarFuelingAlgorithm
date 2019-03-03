@@ -1,0 +1,10 @@
+Algorithm find_gas_stops()
+	current position = start position;
+	while (current_position < end_position)
+		compute the position at which car will run out of gas.
+		if (that position < end position) then
+			find closest gas station before reaching that position.
+			output fill up gas at that gas station.
+			current position = that gas station location
+		else
+			current position = end position; reached
