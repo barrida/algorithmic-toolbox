@@ -33,10 +33,14 @@ public class CarFueling2 {
 		while (i < n && stops[i+1] != stops[n-1]) {
 			distanceToTravel = stops[i];
 			/* Greedy loop */
-			while ((distanceToTravel <= distance) && (distanceToTravel != stops[stops.length-1])) {
+			while ((distanceToTravel <= distance) && (stops[i+1] != stops[n-1])) {
 				numRefills++;
 				distanceToTravel += stops[i+1];
 				i++;
+			}
+			
+			if (stops[i] + tank < distance) {
+				numRefills = -1;
 			}
 		}
 		return numRefills;
